@@ -17,3 +17,7 @@ Learning to Float
   * What happens if we don't clear the float for the blue boxes?
   * What happens if we float both the red and yellow box left?
   * What happens if we float both the red and yellow box right and the blue boxes left?
+
+
+* When selecting classes and ids from the HTML, you can use `.`s to select classes and `#` to select ids
+    * For example, `.testClass` selects all the elements with a class of `testClass`

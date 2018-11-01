@@ -13,18 +13,18 @@
         padding: 20px;
         width: 300px;
         margin: 20px;
-
-        background-color: black;
+        float: left;
+        background-color: red;
+        
         /* Float this element to the left */
-
     }
 
     #yellow-textbox {
         padding: 20px;
         width: 300px;
         margin: 20px;
-
-        background-color: purple;
+        float: right;
+        background-color: yellow;
 
         /* Float this element to the right */
 
@@ -34,8 +34,8 @@
         padding: 20px;
         width: 300px;
         margin: 20px;
-
-        background-color: green;
+        clear: both;
+        background-color: blue;
         
         /* Clear the float for this element so it appears below the red and yellow boxes */
 
@@ -47,20 +47,20 @@
 <body>
 
     <!-- Add classes and IDs to the divs -->
-    <div>
-        <p>I'm a red text box</p>
+    <div class="box">
+        <p id = "red-textbox">I'm a red text box</p>
     </div>
 
-    <div>
-        <p>I'm a yellow text box</p>
+    <div class="box">
+        <p id = "yellow-textbox">I'm a yellow text box</p>
     </div>
 
-    <div>
-        <p>I'm a blue text box</p>
+    <div class="box">
+        <p class = "blue-textbox">I'm a blue text box</p>
     </div>
 
-    <div>
-        <p>I'm a blue text box</p>
+    <div class="box">
+        <p class = "blue-textbox">I'm a blue text box</p>
     </div>
 
 </body>
