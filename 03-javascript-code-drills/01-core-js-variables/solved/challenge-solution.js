@@ -22,17 +22,17 @@ var subject;
 
 //assign a value of "Programmers" to the variable `subject`
 //example: hobby = "problem solving"
-subject = "Programmers"
+subject = "Programmers";
 
 // Create a variable `firstName` and assign it a value of an empty string.
 //example: var emptyString = "";
-var firstName = ""
+var firstName = "";
 
 //assign a value of "Ada" to the variable `firstName`
-firstName = "Ada"
+firstName = "Ada";
 
 // Create a variable `lastName` and assign it a value of a string "Lovelace".
-var lastName = "Lovelace"
+var lastName = "Lovelace";
 
 // Create a variable `fullName` and assign it a value of `firstName` and `lastName` concatenated together with a space between them.
 var fullName = firstName + " " + lastName;
