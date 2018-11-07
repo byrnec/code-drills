@@ -86,34 +86,35 @@ var characterTwoYearlySavings = characterTwoSalary - (characterTwoYearlyRent + c
 
 // Create an if statement to check if `characterOneName` is "Mr. Farley"
 
-if (characterOneName === "Mr. Farley"); {
+if (characterOneName === "Mr. Farley") {
     // If it does, console log "hello Mr. Farley"
 console.log("hello Mr. Farley");
-    
 // Else, check if `characterOneName` is "Ms.Farley"
 
-} else if (characterOneName === "Ms. Farley"); {
+} else if (characterOneName === "Ms. Farley") {
 
     // If it does, console log "hello Ms. Farley"
 console.log("hello Ms. Farley");
-    
+
 // Else, we know if the code reaches this point that `characterOneName` is neither "Mr. Farley" nor "Ms. Farley"
-} else { 
+
+} else {
 
     // So console.log "Hello stranger"
 
     console.log("hello stranger");
 }
 
-// Create an if statement to check if `characterOneAge` is greather than `characterTwoAge`
 
-if (characterOneAge > characterTwoAge); {
+// Create an if statement to check if `characterOneAge` is greater than `characterTwoAge`
+
+if (characterOneAge > characterTwoAge) {
     // If it is, console log `characterOneName` prepended to the string " is older"
 console.log(characterOneName + " is older");
 
 // Else, console log `characterTwoName` prepended to the string " is older"
 } else {
-    console.log(characterTwoName " is older");
+    console.log(characterTwoName + " is older");
 }
 
 
@@ -122,36 +123,48 @@ console.log(characterOneName + " is older");
 // hint: You can join two conditionals together using `&&` to signify the `AND` logical operator
 //       This means that both conditionals on either side of the `&&` have to be true in order for the two combined to be true
 
+if ((characterOneLocation === "San Francisco") && (characterTwoLocation === "New York")) {
 
     // If both are true, console log "Cross Country Friends!"
-
+console.log("Cross Country Friends!") ;
     
 // Else, console log "Local Friends!"
+
+} else { 
+    console.log("Local Friends!")
+}
 
 
 
 
 // Create an if statement to check if `characterOneYearlySavings` is greater than `characterTwoYearlySavings`
 
+if (characterOneYearlySavings > characterTwoYearlySavings) {
 
     // If it is, console log `characterOneName` prepended to the string " is a high roller!"
+console.log(characterOneName + " is a high roller!");
 
     
 // Else, console log `characterTwoName` prepended to the string " is a high roller!"
 
 
-
+} else { 
+    console.log(characterTwoName + " is a high roller!");
+}
 
 // Create an if statement to check if `characterOneProfession` is equal to "Web Developer" or if `characterTwoProfession` is equal to "Data Analyst"
 // hint: You can join two conditionals together using `||` to signify the `OR` logical operator
 //       This means that if at least one conditional on either side of the `||` is true, the combined conditional will also be true
 
-
+if (characterOneProfession === "Web Developer" || characterTwoProfession === "Data Analyst"); {
     // If one of them is true, console log "Hey look! One of them is in the tech industry!"
+console.log("Hey look! One of them is in the tech industry!");
 
     
 // Else, console log "Aww, I wanted to meet someone in tech :("
-
+} else {
+    console.log("awww, I wanted to meet someone in tech :(");
+}
 
 
 
