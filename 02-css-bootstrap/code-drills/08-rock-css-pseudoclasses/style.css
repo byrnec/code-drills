@@ -13,14 +13,17 @@
 
 #top1, #bottom1 {
   background-color: red;
+  float: left;
 }
 
 #top2, #bottom2 {
   background-color: green;
+  float: left;
 }
 
 #top3, #bottom3 {
   background-color: blue;
+  float: left;
 }
 
 button {
@@ -37,3 +40,41 @@ button {
 
 /* Your code goes below here! */
 
+#bottom1:hover {
+  width: 80px;
+  height: 50px;
+}
+
+#bottom2:hover {
+  margin-right: 400px;
+}
+
+#bottom3:hover {
+  background-color: black;
+  float: right;
+}
+
+.btn-even:hover {
+  height: 150px;
+  width: 300px;
+}
+
+.btn-even:active {
+  height: 50px;
+  width: 100px;
+}
+
+.btn-odd:hover {
+  color: whitesmoke;
+  background-color: darkgrey;
+  border-style: outset;
+  border-width: 15px;
+  border-color: lightgrey;
+}
+
+.btn-odd:active {
+  color: whitesmoke;
+  background-color: black;
+  border-width: 15px;
+  border-color: grey;
+  border-style: inset;
