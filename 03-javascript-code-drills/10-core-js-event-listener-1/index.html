@@ -1,0 +1,55 @@
+<!-- # Event Listeners #
+
+### Event listeners are one of our many tools for interacting with the user. In conjunction with getElementById, we can create dynamic pages that respond to user input ###
+
+1. Create an html page and link your css file.
+
+2. Create an event listener that console logs whatever key that the user presses
+
+2. Within that event listener, create a confirm dialogue when the user presses the `h` key on their keyboard. Store their response.
+
+3. Within your event listener, create an alert when the user presses the `k` key
+    * if the user had answered yes in the previous confirm dialogue, have the the alert say "Hello"
+    * if the user had answered no in the previous confirm dialogue, have the alert say "No thanks" -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Listeners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Event Listeners</h1>
+
+    <script src="challenge-solution.js">
+
+        document.onkeyup = function (input) {
+
+
+            var userKey = input.key.toLowerCase();
+
+            console.log(userKey);
+
+            if (userKey === "h") {
+                // store the response from the confirmed response
+                userConfrim = confirm("would you like to change the 'k' button");
+
+                if (userKey === "k") {
+
+                    if () userConfirm === true) {
+
+                        alert("hello!");
+                    } else {
+                        alert("No thanks");
+                    }
+                }
+            }
+
+    </script>
+</body>
+
+</html>
