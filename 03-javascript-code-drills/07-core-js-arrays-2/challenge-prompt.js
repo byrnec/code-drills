@@ -91,27 +91,57 @@ var fruits = [
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"];
 // iterate through fruits and console log the number of times "Apple" appears in the array
 
-
+var appleAppearance = 0;
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i] === "Apple") {
+    appleAppearance++;
+  }
+}
+console.log(appleAppearance);
 
 // iterate through fruits and console log the number of times "Peach" appears in the array
 
-
+var peachAppearance = 0;
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i] === "Peach") {
+    peachAppearance++;
+  }
+}
+console.log(peachAppearance);
 
 // iterate through fruits and console log the number of fruits that start with "P" in the array
+var pFruitAppearance = 0;
+for (var i = 0; i < fruits.length; i++) {
+  // we can access the different characters within a string with the charAt method
+  // Javascript also treats strings as arrays so you can also use the index for reference
+  // var currentFruit = fruits[i];
+  // currentFruit[0] === "P";
+  if (fruits[i].charAt(0) === "P") {
+    pFruitAppearance++;
+  }
+}
+console.log(pFruitAppearance);
 
 
 
 // create a new empty array named uniqueFruits
-
+var uniqueFruits = [];
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
 // you should a shorter array without repeated values
 
+for (var i = 0; i < fruits.length; i++) {
+  // the "includes" method checks whether the argument is included within the array that calls it
+  if (!uniqueFruits.includes(fruits[i])) {
+    uniqueFruits.push(fruits[i]);
+  }
+}
 
 
 // console log out your uniqueFruits array
 
 
+console.log(uniqueFruits);
 
 
 // This seperator is here to make your console logs a little easier to read 
@@ -131,36 +161,67 @@ var twoDimArray = [
 console.log("     first array      ");
 // iterate through the first array inside twoDimArray and console log all the numbers less than 25
 
+for (var i = 0; i < twoDimArray[0].length; i++){
+  if (twoDimArray[0][i] < 25) {
+    console.log(twoDimArray[0][i]);
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     second array      ");
 // iterate through the second array inside twoDimArray and console log all the numbers less than 25
 
+for (var i = 0; i < twoDimArray[1].length; i++){
+  if (twoDimArray[1][i] < 25) {
+    console.log(twoDimArray[1][i]);
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     third array      ");
 // iterate through the third array inside twoDimArray and console log all the numbers less than 25
 
-
+for (var i = 0; i < twoDimArray[2].length; i++){
+  if (twoDimArray[2][i] < 25) {
+    console.log(twoDimArray[2][i]);
+  }
+}
 
 // another seperator for your convenience
 console.log("     fourth array      ");
 // iterate through the fourth array inside twoDimArray and console log all the numbers less than 25
 
+for (var i = 0; i < twoDimArray[3].length; i++){
+  if (twoDimArray[3][i] < 25) {
+    console.log(twoDimArray[3][i]);
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     fifth array      ");
 // iterate through the fifth array inside twoDimArray and console log all the numbers less than 25
 
+for (var i = 0; i < twoDimArray[4].length; i++){
+  if (twoDimArray[4][i] < 25) {
+    console.log(twoDimArray[4][i]);
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     odd numbers      ");
 // iterate through twoDimArray and the arrays inside of it and console log all the odd numbers
 
+for (var outerIndex = 0; outerIndex < twoDimArray.length; outerIndex++) {
+  for (var innerIndex = 0; innerIndex < twoDimArray[outerIndex][innerIndex]; innerIndex++) {
+    if ((twoDimArray[outerIndex][innerIndex] % 2) === 1) {
+      console.log(twoDimArray[outerIndex][innerIndex]);
+    }
+  }
+}
 
 
 // another seperator for your convenience
@@ -168,5 +229,13 @@ console.log("     sum of multiples of 3      ");
 // iterate through twoDimArray and the arrays inside of it and 
 // console log the sum of all the numbers that are a multiple of 3
 
-
+var sum = 0;
+for (var outerIndex = 0; outerIndex < twoDimArray.length; outerIndex++) {
+  for (var innerIndex = 0; innerIndex < twoDimArray[outerIndex][innerIndex]; innerIndex++) {
+    if ((twoDimArray[outerIndex][innerIndex] % 3) === 0) {
+      sum += twoDimArray[outerIndex][innerIndex];
+    }
+  }
+}
+console.log(sum)
 
