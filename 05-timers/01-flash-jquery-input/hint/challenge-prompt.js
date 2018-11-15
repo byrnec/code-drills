@@ -4,9 +4,10 @@
 
 // wait for the DOM to finish loading (document.ready)
 
+document.ready()
 
   // Create a click listener for the submit button
-
+("#submit").click()
 
     // stop the default behavior of the submit button
 

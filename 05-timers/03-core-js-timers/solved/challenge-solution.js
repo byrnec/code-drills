@@ -21,7 +21,6 @@ var questionTwo = setTimeout(questionOne, 1000 * 15);
 // Remove the timer you just made for Question 2
 clearTimeout(questionTwo);
 
-
 console.log("==================== Question 03 ====================");
 // Create a timer that creates an alert that says "Question 3 part 1" after 15 seconds
 var questionThreePtOne = setTimeout(function() {alert("Question 3 part 1")}, 1000 * 15);

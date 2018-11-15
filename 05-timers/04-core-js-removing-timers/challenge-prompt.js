@@ -15,44 +15,59 @@ var one = setTimeout(log("Question1-1"), 1000 * 5);
 var two = setTimeout(log("Question1-2"), 1000 * 6);
 var three = setTimeout(log("Question1-3"), 1000 * 7);
 
+
+// REMEMBER!!! in order to be able to remove a timer, you must assign its declaration to a variable.
+
 // remove the timers `one`, `two`, and `three`
 
-
+clearTimeout(one);
+clearTimeout(two);
+clearTimeout(three);
 
 console.log("==================== Question 02 ====================");
 // create a timer that logs "Hello" after 17 seconds
-
+var questionTwo =setTimeout(log("hello"), 1000 * 17);
 
 
 // remove the timer you just made
 
-
+clearTimeout(questionTwo);
 
 console.log("==================== Question 03 ====================");
 // create a timer that logs "Goodbye" after 17 seconds
 
-
+var questionThree = setInterval(log("Goodbye"), 1000*17);
 
 // create a timer that removes the "Goodbye" timer after 5 seconds
 // HINT: much like the `log` function we defined at the top of the page,
 // you're going to have to create a function that returns another function
+function clearQuestionThree () {
+  return clearTimeout(QuestionThree);
+}
 
-
+clearInterval(questionThree, 1000 *5)
 
 console.log("==================== Question 04 ====================");
 // create a timer that logs "Part 1" after 3 seconds
-
-
+var questionFour = setInterval(log("Part 1"), 1000 *3);
 
 // create a timer that removes the "Part 1" timer after 2 seconds and also
 // console logs out "Part 2" when it runs
+function removePartTwo () {
+  console.log("part 2");
+  return clearInterval(questionFour);
+}
 
-
+var questionFourpt2 = setTimeout(removePartTwo, 1000 *2);
 
 // create a timer that removes the "Part 2" timer after 1 second and also
 // console logs out "Part 3" when it runs
+function removeQ4PartThree () {
+  console.log("Part 3");
+  return clearTimeout(questionFourTwo);
+}
 
-
+setTimeout(removeQ4PartThree, 1000 *1)
 
 console.log("==================== Question 05 ====================");
 var alertArray = [
@@ -71,4 +86,6 @@ var alertArray = [
 
 // remove all the timers created by `alertArray`.
 
-
+for (var i =0, i < alertArray.length; i++) {
+  clearInterval(alertArray[i]);
+}
