@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "05-timers"
+		},
+		{
+			"path": "05-timers/01-flash-jquery-input"
+		},
+		{
+			"path": "05-timers/02-flash-jquery-this-and-listeners"
+		},
+		{
+			"path": "05-timers/03-core-js-timers"
+		},
+		{
+			"path": "05-timers/04-core-js-removing-timers"
+		},
+		{
+			"path": "05-timers/05-flash-js-nested-arrays-1"
+		},
+		{
+			"path": "05-timers/06-flash-js-nested-arrays-2"
+		},
+		{
+			"path": "05-timers/07-core-js-intervals"
+		},
+		{
+			"path": "05-timers/08-algo-js-divisors"
+		},
+		{
+			"path": "05-timers/09-core-fizzbuzz-reloaded"
+		},
+		{
+			"path": "05-timers/10-rock-fizzbuzz-expanded"
+		},
+		{
+			"path": "05-timers/11-rock-js-anagram-checker"
+		}
+	]
+}
