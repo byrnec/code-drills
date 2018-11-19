@@ -21,7 +21,7 @@ $(document).submit(function () {
             $(".shows").append("<img src=" + response[i].show.image.medium + ">");
             // console.log the name of the show and append it to the page
             console.log(response[i].show.name)
-            $(".shows").append("<div> <p>" + response[i].show.name + "</p></div>");
+            $(".shows").append("<div><p>" + response[i].show.name + "</p></div>");
             // console.log the genres of the show and append it to the page
             console.log(response[i].show.genres)
             $(".shows").append("<div> <p>" + response[i].show.genres + "</p></div>");
