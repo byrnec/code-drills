@@ -76,9 +76,10 @@
       url: 'https://newsapi.org/v2/top-headlines?' +
         'country=us&' +
         // This solution does not include an API key. You will have to fill in the API key in the query url
-        'apiKey=???????',
+        'apiKey=81fd532af96f4ea6b9d0add5294113af',
       method: "GET"
     }).then(function (response) {
+      
       console.log(response);
       for (var i = 0; i < response.articles.length; i++) {
         if (!response.articles[i].author) {

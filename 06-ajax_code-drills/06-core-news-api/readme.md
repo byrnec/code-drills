@@ -31,4 +31,5 @@ Scroll down towards the bottom until you find the <script></script> tag. You wil
 
 <img src="final.png">
 
+
 (You should be able to scroll through the news box for more stories)
