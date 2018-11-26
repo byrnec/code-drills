@@ -29,20 +29,24 @@ var name = "Not California";
 
 console.log("==================== Question 01 ====================");
 // What is the value of `this.name`?
-// 
-
+// Not California....reason being is that THIS points the object that calls the function. if not
+// explicitly stated then it looks to the global window function and object
+console.log(this.name)
 
 
 console.log("==================== Question 02 ====================");
 // What is the value of california.name?
-//
+// California
+
+console.log(california.name);
 
 
 
 console.log("==================== Question 03 ====================");
 // What does `california.getName()` return?
-//
+//california
 
+console.log(california.getName());
 
 
 // We are passing the getName method from california to stateCall as a callback function
@@ -54,8 +58,8 @@ function stateCall(callback) {
 
   console.log("==================== Question 04 ====================");
   // What is the value of `location`?
-  //
-
+  // not cali
+  console.log(location);
 }
 
 
@@ -66,14 +70,14 @@ console.log("==================== Question 05 ====================");
 
 // ================ Your code here ================
 
-
-
-
+california.getCapital = function () {
+  return this.capital;
+}
 
 // ============== End of your code area ===========
 
 // console log the return value of your method here
-
+console.log(california.getCapital());
 
 // end of console log area
 
@@ -81,9 +85,10 @@ console.log("==================== Question 05 ====================");
 
 console.log("==================== Question 06 ====================");
 // what does `california.sanfrancisco.getName()` return?
-//
+// SF
 
 
+console.log(california.sanfrancisco.getName());
 
 
 // We are passing the getName method to cityCall as a callback function
@@ -95,7 +100,7 @@ function cityCall(callback) {
 
   console.log("==================== Question 07 ====================");
   // What is the value of `location`?
-  //
+  // not cali
 
 }
 
@@ -107,7 +112,7 @@ function getName() {
 
 console.log("==================== Question 08 ====================");
 // What does `getName()` return?
-// 
+// not cali
 
 
 
@@ -132,8 +137,9 @@ function count() {
 
 console.log("==================== Question 09 ====================");
 // If we execute `count()` what does it console log out?
-//
-
+// odd 1
+//even 2 // odd 3 //even 4
+count();
 
 
 function countWrapper() {
@@ -143,7 +149,8 @@ function countWrapper() {
 
 console.log("==================== Question 10 ====================");
 // What is the return value of `countWrapper()`
-//
+// 5
+console.log("Return ", countWrapper())
 
 
 
