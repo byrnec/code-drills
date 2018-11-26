@@ -7,10 +7,12 @@
 function createButton(str) {
   // ---------- Your Code Here ----------
 
+var newButton = $("<button>");
+newButton.data("content", str);
+newButton.text(str);
+newButton.addClass("btn");
 
-
-
-
+$("button-area").append(newButton);
 
   // ---------- End of Code area ----------
 }
@@ -26,10 +28,8 @@ function createButton(str) {
 function displayContent(event) {
   // ---------- Your Code Here ----------
 
-
-
-
-
+var text = $(this).data("content");
+$("#display-area").append(text);
 
   // ---------- End of Code area ----------
 }
@@ -41,10 +41,19 @@ function displayContent(event) {
 $(function () {
   // ---------- Your Code Here ----------
 
+  $(document).on("click", ".content-button", displayContent);
 
+  $(document).on("click", "#clear-button", function(event) {
+    event.preventDefault();
+    $("#display-area").empty();
+  });
 
-
-
+  $(document).on("click", "#submit-button", function(event) {
+    event.preventDefault();
+    var buttonText = $("#user-input").val();
+    $("#user-input").val("");
+    createButton(buttonText);
+  });
 
   // ---------- End of Code area ----------
 })

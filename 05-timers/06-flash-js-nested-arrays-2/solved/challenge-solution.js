@@ -92,8 +92,6 @@ function greatestFrequency(toyInventory){
 greatestFrequency(toyInventoryObj);
 
 
-
-
 // ------------------------------------------------------------------
 console.log("==================== Question 03  ====================");
 // Custom obj Creation from an Array of Values

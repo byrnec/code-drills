@@ -22,7 +22,7 @@ function checkWobble(str) {
 
   // create a string of the all vowels for us to check the letters against
   var vowels = "aeiou";
-
+ 
   // declare a variable to track the number of vowels in the world and 
   // instantiate it to 0
   var vowelCount = 0;

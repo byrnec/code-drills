@@ -26,11 +26,15 @@ function returnCustomObject(arr){
 	var obj ={};
   
   // ---------- Your Code Here ----------
+for (var i=0; i <arr.length; i++){
 
 
-
-
-
+   if (obj[arr[i]]) {
+      obj[arr[i]] += 1;
+   } else {
+      obj[arr[i]] +1;
+   }
+   }
 
   // ---------- End of Code Area ----------
 
@@ -54,8 +58,6 @@ console.log(toyInventoryObj);
 //   'Slip n Slide': 1 }
 
 
-
-
 // ------------------------------------------------------------------
 console.log("==================== Question 02  ====================");
 // Evaluating Values in a Object:
@@ -68,11 +70,16 @@ function greatestFrequency(toyInventory){
   
   // ---------- Your Code Here ----------
 
+  maxToy = "";
+  maxNum = 0;
 
+  for (toy in toyInventory) {
 
-
-
-
+    if (toyInventory[toy] > maxNum){
+			maxNum = toyInventory[toy];
+			maxToy = toy;
+		}
+  }
   // ---------- End of Code Area ----------
 
 	console.log("The toy that occurs the greatest number of times is "+ maxToy + ", which occurs " + maxNum +" times.")
@@ -81,8 +88,6 @@ function greatestFrequency(toyInventory){
 // The console log of your application should be the following string: 
 // "The toy that occurs the greatest number of times is 'Mr. Potato Head', which occurs 3 times."
 greatestFrequency(toyInventoryObj);
-
-
 
 
 // ------------------------------------------------------------------
@@ -101,9 +106,9 @@ function toyArrToObj(arrayOfToys){
   // ---------- Your Code Here ----------
 
 
-
-
-
+  for(var i =0; i < arrayOfToys.length; i++){
+   toyArrayOfObjs.push({name: arrayOfToys[i]})
+}
 
   // ---------- End of Code Area ----------
 
@@ -218,8 +223,23 @@ function createCustomObject(objectArr){
   // ---------- Your Code Here ----------
 
 
-
-
+  for(var i=0; i < objectArr.length;i++){
+   // if the toyline already exists, add the current toy to the "toyLineToys" array
+   // and add the stock of the current toy to the toyline stock 
+     if(customToyLineObj[objectArr[i].toyLine]){
+        customToyLineObj[objectArr[i].toyLine].toyLineToys.push(objectArr[i].title)
+        customToyLineObj[objectArr[i].toyLine].totalToysInToyLine += objectArr[i].stock
+     
+   // otherwise, instantiate a new toyline object within our `customToyLineObj`
+     }else{
+     customToyLineObj[objectArr[i].toyLine] = {
+     toyLine: objectArr[i].toyLine,
+     toyLineToys: [objectArr[i].title],
+     totalToysInToyLine: objectArr[i].stock
+     };
+   
+   }    
+  }
 
 
   // ---------- End of Code Area ----------
@@ -262,11 +282,20 @@ function areDups(arr){
 
   // ---------- Your Code Here ----------
 
+  // create a lookup table to store all the values we've seen so far
+  var existingNums = {};
 
+  for (var i = 0; i < arr.length; i++) {
+    // if we've seen the current value already, there is at least one duplicate, so return true
+    if (existingNums[arr[i]]) {
+      return true
+    // otherwise, add the current value to the lookup table
+    } else {
+      existingNums[arr[i]] = true;
+    }
+  }
 
-
-
-
+  return false;
   // ---------- End of Code Area ----------
 
 }

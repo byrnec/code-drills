@@ -31,7 +31,8 @@ console.log("==================== Question 01 ====================");
 var nestedArray = [[1,2], ["nested", ["Radio Flyer Wagon", "Chemistry Set", ["Joy Buzzer", "Yo-Yo"]]]];
 var target;
 // assign `target` the value of "Yo-Yo" using the `nestedArray` variable
-// 
+// target = 
+target = nestedArray[1][1][2][1];
 
 
 
@@ -45,7 +46,7 @@ console.log("==================== Question 02 ====================");
 var nestedArray = ["Pop-Up Book", ["Stuffed Mickey Mouse", ["Beach Ball", "Sock Monkey"], "Buck Rogers Rocket Pistol"], "Microscope Set"];
 var target;
 // assign `target` the value of "Sock Monkey" using the `nestedArray` variable
-// 
+// target = nestedArray [1][1][1]
 
 
 
@@ -59,7 +60,7 @@ console.log("==================== Question 03 ====================");
 var nestedNumberArray = [3,1,[41,59,265,358,979],32,38,46,[264338,327,9,50,[2,88,42,971],69,3,9,937],510,58,2];
 var target;
 // assign `target` the value of 42 using the `nestedNumberArray` variable
-// 
+//  target = nestedNumberArray [6][4][2]
 
 
 
@@ -73,7 +74,7 @@ console.log("==================== Question 04 ====================");
 var nestedMixedArray = [8,[76,["Bubble Solution"],530,"Slinky","Magic 8 Ball","Legos"],9];
 var target;
 // assign `target` the value of "Legos" using the `nestedMixedArray` variable
-// 
+// [1][5]
 
 
 
@@ -92,7 +93,7 @@ console.log("==================== Question 05 ====================");
 var nestedObject = {"outer": {"innerKey": {"object": {"key": "Value!"}}}}
 var target;
 // assign `target` the value of "Value!" using the `nestedObject` variable
-// 
+// target = nestedObject.outer.innerKey.object.key;
 
 
 
@@ -107,7 +108,7 @@ console.log("==================== Question 06 ====================");
 var nestedMixedDataTypes = {"array": ["array", {"object": "goal"}]}
 var target;
 // assign `target` the value of "goal" using the `nestedMixedDataTypes` variable
-// 
+// target = nestedMixedDataTypes.array[1].object
 
 
 
@@ -220,10 +221,11 @@ var toyArrayOfObjects = [
 function iterateArrObjects(arrOfObj){
   // ---------- Your Code Here ----------
 
-
-
-
-
+for (var i=0; i < arrOfObj.length; i++) {
+   console.log("Count: ", arrOfObj[i].Product);
+console.log("Item: ", arrOfObj[i].item);
+console.log("*************************");
+}
 
   // ---------- End of Code Area ----------
 }
@@ -252,10 +254,11 @@ console.log("==================== Question 08  ====================");
 function iterateArrObjectsReverse(arrOfObj){
   // ---------- Your Code Here ----------
 
-
-
-  
-
+  for (var i = arrOfObj.length-1; i >= 0; i--) {
+   console.log("Count: ", arrOfObj[i].Product);
+   console.log("Item: ", arrOfObj[i].item);
+   console.log("********");
+ }
 
   // ---------- End of Code Area ----------
 }

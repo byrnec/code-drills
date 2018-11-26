@@ -218,7 +218,7 @@ function iterateArrObjects(arrOfObj){
   for (var i = 0; i < arrOfObj.length; i++) {
     console.log("Count: ", arrOfObj[i].Product);
     console.log("Item: ", arrOfObj[i].item);
-    console.log("*************************");
+    console.log("***********");
   }
 
   // ---------- End of Code Area ----------
