@@ -24,7 +24,7 @@ fs.readFile("quotes.txt", "utf8", function(error, data) {
     //Separate the person from the quote
     var quote = fullQuotes[i].split("-");
 
-    if (quote[1].toLocaleLowerCase() === person) {
+    if (quote[i].toLocaleLowerCase() === person) {
 
       //change the default message to the quote in question
       message = quote[0];
