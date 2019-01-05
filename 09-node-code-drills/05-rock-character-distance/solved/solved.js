@@ -14,7 +14,7 @@
       }
     }
 
-
+// create var to hold temporarily
     var hold = []
     for (var i = 0 ; i < str.length ; i ++) {
       var temp = []
@@ -27,7 +27,7 @@
     }
 
     for (var i = 0 ; i < hold.length ; i++) {
-      //Max distance an element can be
+      // Max distance an element can be
       var index = str.length;
       for (var j = 0 ; j < hold[i].length ; j++) {
         if (hold[i][j] < index) {
